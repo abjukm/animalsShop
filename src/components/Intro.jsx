@@ -4,6 +4,7 @@ import cats from "../assets/introImg/cats.png";
 import dogs from "../assets/introImg/dogs.png";
 import birds from "../assets/introImg/birds.png";
 import fishes from "../assets/introImg/fishes.png";
+import { Main } from "./Main";
 
 function Intro() {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ function Intro() {
               <img
                 src={dogs}
                 alt="dogsImg"
-                className="rounded-4xl rounded-4xl object-cover w-full h-full"
+                className="rounded-4xl object-cover w-full h-full"
               />
               <h2 className="absolute bottom-4 left-4">Собачки</h2>
             </div>
@@ -69,6 +70,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      <Main />
     </>
   );
 }
