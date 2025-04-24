@@ -25,7 +25,7 @@ function Intro() {
           <h1 className="text-[23px] ml-[30px] font-medium">Выбери питомца</h1>
           <div className="flex justify-around text-white text-[40px] font-semibold">
             <div
-              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              className="relative w-48 h-64 rounded-xl overflow-hidden transition-transform transform hover:scale-105"
               onClick={() => handleCardClick("/cats")}
             >
               <img
@@ -36,7 +36,7 @@ function Intro() {
               <h2 className="absolute bottom-4 left-4">Кошки</h2>
             </div>
             <div
-              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              className="relative w-48 h-64 rounded-xl overflow-hidden transition-transform transform hover:scale-105"
               onClick={() => handleCardClick("/dogs")}
             >
               <img
@@ -47,7 +47,7 @@ function Intro() {
               <h2 className="absolute bottom-4 left-4">Собачки</h2>
             </div>
             <div
-              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              className="relative w-48 h-64 rounded-xl overflow-hidden transition-transform transform hover:scale-105"
               onClick={() => handleCardClick("/birds")}
             >
               <img
@@ -58,7 +58,7 @@ function Intro() {
               <h2 className="absolute bottom-4 left-4">Птички</h2>
             </div>
             <div
-              className="relative w-48 h-64 rounded-xl overflow-hidden"
+              className="relative w-48 h-64 rounded-xl overflow-hidden transition-transform transform hover:scale-105"
               onClick={() => handleCardClick("/fishes")}
             >
               <img

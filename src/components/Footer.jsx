@@ -32,9 +32,9 @@ export const Footer = () => {
               <hr  className='bg-white w-auto h-1 '/>
 
               <div className="flex justify-center gap-10 mt-20">
-                <img src={face} alt=""/>
-                <img src={insta} alt="" />
-                <img src={twiter} alt="" />
+                <img src={face} alt="" className='transition-transform transform hover:scale-105'/>
+                <img src={insta} alt="" className='transition-transform transform hover:scale-105' />
+                <img src={twiter} alt="" className='transition-transform transform hover:scale-105' />
               </div>
        </div>
        
