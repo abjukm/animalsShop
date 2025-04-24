@@ -5,6 +5,7 @@ import dogs from "../assets/introImg/dogs.png";
 import birds from "../assets/introImg/birds.png";
 import fishes from "../assets/introImg/fishes.png";
 import { Main } from "./Main";
+import { Footer } from "./Footer";
 
 function Intro() {
   const navigate = useNavigate();
@@ -71,6 +72,7 @@ function Intro() {
         </div>
       </div>
       <Main />
+      <Footer/>
     </>
   );
 }

@@ -7,6 +7,7 @@ import Intro from "./components/Intro";
 import { Main } from "./components/Main";
 import Header from "./components/Header";
 import Section from "./components/Registr/Section";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         </Routes>
       </Router>
       <Section />
+
     </>
   );
 }
