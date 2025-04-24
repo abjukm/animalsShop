@@ -22,10 +22,8 @@ function Main() {
                   Get a discount{" "}
                 </p>
               </div>
-              <button className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800 ">
-              </button>
               <button
-                className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50"
+                className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800"
                 onClick={() => handleCardClick("/registr")}
               >
                 Join
