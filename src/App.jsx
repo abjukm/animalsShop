@@ -4,6 +4,7 @@ import Dogs from "./pages/Dogs";
 import Birds from "./pages/Birds";
 import Fishes from "./pages/Fishes";
 import Intro from "./components/Intro";
+import { Main } from "./components/Main";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/fishes" element={<Fishes />} />
         </Routes>
       </Router>
+      <Main />
     </>
   );
 }
