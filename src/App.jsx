@@ -20,7 +20,6 @@ function App() {
           <Route path="/fishes" element={<Fishes />} />
         </Routes>
       </Router>
-      <Main />
     </>
   );
 }

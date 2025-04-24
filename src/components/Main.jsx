@@ -1,7 +1,7 @@
 import React from "react";
 import Photo from "../assets/img/Intro.jpg";
 
-const Main = () => {
+export const Main = () => {
   return (
     <>
       <main className="w-full ">
@@ -28,5 +28,3 @@ const Main = () => {
     </>
   );
 };
-
-export default Main;

@@ -4,6 +4,7 @@ import cats from "../assets/introImg/cats.png";
 import dogs from "../assets/introImg/dogs.png";
 import birds from "../assets/introImg/birds.png";
 import fishes from "../assets/introImg/fishes.png";
+import { Main } from "./Main";
 
 function Intro() {
   const navigate = useNavigate();
@@ -69,6 +70,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      <Main />
     </>
   );
 }
