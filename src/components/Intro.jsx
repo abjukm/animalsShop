@@ -4,8 +4,9 @@ import cats from "../assets/introImg/cats.png";
 import dogs from "../assets/introImg/dogs.png";
 import birds from "../assets/introImg/birds.png";
 import fishes from "../assets/introImg/fishes.png";
-import { Main } from "./Main";
+import Main from "./Main";
 import { Footer } from "./Footer";
+import Header from "./Header";
 
 function Intro() {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function Intro() {
   };
   return (
     <>
+      <Header />
       <div className="w-full h-[551px] flex flex-col items-center mt-[164px] justify-center">
         <input
           type="text"
@@ -72,7 +74,7 @@ function Intro() {
         </div>
       </div>
       <Main />
-      <Footer/>
+      <Footer />
     </>
   );
 }

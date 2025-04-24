@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Photo from "../assets/img/Intro.jpg";
-import fotodog from '../assets/img/fotodog.png'
+import fotodog from "../assets/img/fotodog.png";
 
-export const Main = () => {
+function Main() {
+  const navigate = useNavigate();
+
+  const handleCardClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
       <main className="w-full ">
@@ -16,7 +22,10 @@ export const Main = () => {
                   Get a discount{" "}
                 </p>
               </div>
-              <button className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50">
+              <button
+                className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50"
+                onClick={() => handleCardClick("/registr")}
+              >
                 Join
               </button>
             </div>
@@ -27,35 +36,47 @@ export const Main = () => {
         </section>
 
         <div className="flex flex-col justify-center max-w-xl  rounded-xl ml-50 min-h-screen">
-      <h1 className="text-xl font-semibold">some good advice for</h1>
-      <h1 className="text-xl font-semibold mb-4">taking care of your pet:</h1>
-      
-      <div className="text-[#5C5C5C] space-y-4 rounded-md p-4">
-        <div>
-          <p className="font-semibold">patience and understanding:</p>
-          <p>understand the pets have their personalities.<br />
-          be patient, especially during training.</p>
-        </div>
+          <h1 className="text-xl font-semibold">some good advice for</h1>
+          <h1 className="text-xl font-semibold mb-4">
+            taking care of your pet:
+          </h1>
 
-        <div>
-          <p className="font-semibold">educate yourself:</p>
-          <p>learn about your pet’s specific breed, behaviors, and health requirements.</p>
-        </div>
+          <div className="text-[#5C5C5C] space-y-4 rounded-md p-4">
+            <div>
+              <p className="font-semibold">patience and understanding:</p>
+              <p>
+                understand the pets have their personalities.
+                <br />
+                be patient, especially during training.
+              </p>
+            </div>
 
-        <div>
-          <p className="font-semibold">emergency preparedness:</p>
-          <p>familiarize yourself with the location of the nearest emergency veterinary clinic.</p>
-        </div>
+            <div>
+              <p className="font-semibold">educate yourself:</p>
+              <p>
+                learn about your pet’s specific breed, behaviors, and health
+                requirements.
+              </p>
+            </div>
 
-        <div>
-          <p className="font-semibold">positive reinforcement:</p>
-          <p>learn positive reinforcement techniques.</p>
-        </div>
+            <div>
+              <p className="font-semibold">emergency preparedness:</p>
+              <p>
+                familiarize yourself with the location of the nearest emergency
+                veterinary clinic.
+              </p>
+            </div>
 
-      </div>
-    <img src={fotodog} alt=""  className=' absolute ml-150'/>
-    </div>
+            <div>
+              <p className="font-semibold">positive reinforcement:</p>
+              <p>learn positive reinforcement techniques.</p>
+            </div>
+          </div>
+          <img src={fotodog} alt="" className="absolute ml-150" />
+        </div>
       </main>
     </>
   );
-};
+}
+
+export default Main;

@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Birds = () => {
-  return <div>Birds</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Birds;

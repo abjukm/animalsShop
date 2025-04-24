@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Fishes = () => {
-  return <div>Fishes</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Fishes;
