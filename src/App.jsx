@@ -5,6 +5,7 @@ import Birds from "./pages/Birds";
 import Fishes from "./pages/Fishes";
 import Intro from "./components/Intro";
 import Header from "./components/Header";
+import Section from "./components/Registr/Section";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/fishes" element={<Fishes />} />
         </Routes>
       </Router>
+      <Section />
     </>
   );
 }
