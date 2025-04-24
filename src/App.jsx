@@ -4,10 +4,12 @@ import Dogs from "./pages/Dogs";
 import Birds from "./pages/Birds";
 import Fishes from "./pages/Fishes";
 import Intro from "./components/Intro";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<Intro />} />
