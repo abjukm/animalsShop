@@ -1,7 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 
 const Dogs = () => {
-  return <div>Dogs</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Dogs;
