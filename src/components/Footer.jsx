@@ -33,6 +33,7 @@ export const Footer = () => {
           </ul>
         </div>
         <hr className="bg-white w-auto h-1 " />
+
         <div className="flex justify-center gap-10 mt-20">
           <img src={face} alt="" />
           <img src={insta} alt="" />
