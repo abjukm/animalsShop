@@ -9,7 +9,7 @@ export const Footer = () => {
     <>
       <div className="bg-black w-auto h-120">
         <h1 className="text-white flex justify-center pt-10 text-2xl">
-          Subscribe To Our Newsletter
+          Подпишитесь на нашу рассылку
         </h1>
         <div className="flex justify-center pt-10">
           <input
@@ -17,7 +17,7 @@ export const Footer = () => {
             className="text-white placeholder-white border border-white  px-8 py-2 rounded "
             placeholder="Email"
           />
-          <button className="text-white bg-[#EBC154] px-12 py-2 rounded ml-3 hover:bg-gray-800 transition">
+          <button className="text-white bg-[#EBC154] px-12 py-2 rounded ml-3 hover:bg-gray-800 transition cursor-pointer">
             SUBSCRIBE
           </button>
         </div>
@@ -34,10 +34,22 @@ export const Footer = () => {
         </div>
         <hr className="bg-white w-auto h-1 " />
 
-        <div className="flex justify-center gap-10 mt-20">
-          <img src={face} alt="" />
-          <img src={insta} alt="" />
-          <img src={twiter} alt="" />
+        <div className="flex justify-center gap-10 mt-20 ">
+          <img
+            src={face}
+            alt=""
+            className="overflow-hidden transition-transform transform hover:scale-120 cursor-pointer"
+          />
+          <img
+            src={insta}
+            alt=""
+            className="overflow-hidden transition-transform transform hover:scale-120 cursor-pointer"
+          />
+          <img
+            src={twiter}
+            alt=""
+            className="overflow-hidden transition-transform transform hover:scale-120 cursor-pointer"
+          />
         </div>
       </div>
     </>

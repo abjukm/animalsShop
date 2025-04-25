@@ -15,25 +15,25 @@ const Section = () => {
       <main className="flex mt-25 fixed w-full h-full">
         <div className="w-[200px]  h-[660px] ps-[20px] bg-black text-white flex flex-col justify-between rounded-br-[100px] z-20 ">
           <div className="h-[300px] flex flex-col justify-evenly mt-15">
-            <div className="flex items-center">
+            <div className="flex items-center hover:text-[#EBC154] cursor-pointer">
               <img className="" src={user1} alt="userr" />
               <p className="">Profile</p>
             </div>
-            <div className="flex">
+            <div className="flex hover:text-[#EBC154] cursor-pointer">
               <img className="" src={heart} alt="" />
               <p className="">Favorites</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center hover:text-[#EBC154] cursor-pointer">
               <img className="" src={shopping} alt="" />
               <p className="">Previous Shops</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center hover:text-[#EBC154] cursor-pointer">
               <img className="" src={cord} alt="" />
               <p className="">Peyment</p>
             </div>
           </div>
           <div>
-            <div className="flex items-center my-[20px] mb-10">
+            <div className="flex items-center my-[20px] mb-10 hover:text-[#EBC154] cursor-pointer">
               <img className="" src={vector} alt="" />
               <p className="">Settings</p>
             </div>

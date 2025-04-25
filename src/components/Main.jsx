@@ -3,12 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Photo from "../assets/img/Intro.jpg";
 import fotodog from "../assets/img/fotodog.png";
 
-function Main() {
-  const navigate = useNavigate();
-
-  const handleCardClick = (path) => {
-    navigate(path);
-  };
+const Main = () => {
   return (
     <>
       <main className="w-full ">
@@ -17,15 +12,12 @@ function Main() {
             <div>
               <div className="text-3xl font-bold ">
                 <p>
-                  Become a member;
+                  Стать участником;
                   <br />
-                  Get a discount{" "}
+                  Получить скидку{" "}
                 </p>
               </div>
-              <button
-                className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800"
-                onClick={() => handleCardClick("/registr")}
-              >
+              <button className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800 cursor-pointer">
                 Join
               </button>
             </div>
@@ -36,40 +28,44 @@ function Main() {
         </section>
 
         <div className="flex flex-col justify-center max-w-xl  rounded-xl ml-50 min-h-screen">
-          <h1 className="text-xl font-semibold">some good advice for</h1>
+          <h1 className="text-xl font-semibold">
+            Несколько хороших советов для
+          </h1>
           <h1 className="text-xl font-semibold mb-4">
-            taking care of your pet:
+            заботы о вашем питомце:
           </h1>
 
           <div className="text-[#5C5C5C] space-y-4 rounded-md p-4">
             <div>
-              <p className="font-semibold">patience and understanding:</p>
+              <p className="font-semibold">Терпение и понимание:</p>
               <p>
-                understand the pets have their personalities.
+                Поймите, что у домашних животных есть свой характер.
                 <br />
-                be patient, especially during training.
+                Будьте терпеливы, особенно во время тренировок.
               </p>
             </div>
 
             <div>
               <p className="font-semibold">educate yourself:</p>
               <p>
-                learn about your pet’s specific breed, behaviors, and health
-                requirements.
+                Узнайте о конкретной породе, поведении и здоровье вашего питомца
+                Требования.
               </p>
             </div>
 
             <div>
-              <p className="font-semibold">emergency preparedness:</p>
+              <p className="font-semibold">
+                Готовность к чрезвычайным ситуациям:
+              </p>
               <p>
-                familiarize yourself with the location of the nearest emergency
-                veterinary clinic.
+                Ознакомьтесь с местом расположения ближайшего ЧП ветеринарная
+                клиника.
               </p>
             </div>
 
             <div>
-              <p className="font-semibold">positive reinforcement:</p>
-              <p>learn positive reinforcement techniques.</p>
+              <p className="font-semibold">Положительное подкрепление:</p>
+              <p>Изучите техники положительного подкрепления.</p>
             </div>
           </div>
           <img src={fotodog} alt="" className="absolute ml-150" />
@@ -77,6 +73,6 @@ function Main() {
       </main>
     </>
   );
-}
+};
 
 export default Main;

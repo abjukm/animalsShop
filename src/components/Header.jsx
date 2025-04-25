@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/introImg/logo.png";
 import { useNavigate } from "react-router-dom";
+import petshop from "../assets/footicon/petshop.svg";
 
 function Header() {
   const navigate = useNavigate();
@@ -11,18 +12,25 @@ function Header() {
   return (
     <>
       <div className="bg-black w-full fixed top-0 left-0 z-20 h-25 flex items-center">
-        <div className="w-[90%] ml-[5%] flex justify-around items-center ">
-          <div
-            className="flex items-center justify-between"
-            onClick={() => handleCardClick("/")}
-          >
-            <img className="rounded-[50%]" src={logo} alt="" />
+        <div className="w-full flex justify-between items-center ml-[20px]">
+          <div className="flex items-center justify-between cursor-pointer">
+            <img
+              className="rounded-[50%] overflow-hidden transition-transform transform hover:scale-120"
+              src={logo}
+              alt=""
+              onClick={() => handleCardClick("/registr")}
+            />
             <h1 className="text-white text-[30px] pl-5">ZooTopia</h1>
           </div>
-          <p className="text-white ml-[-80px]">
-            Find everything that you need for your pet
+          <p className="text-white ml-[-80px] text-[25px]">
+            Найдите все, что вам нужно для вашего питомца
           </p>
-          <p className="text-white mr-20">PetShop</p>
+          <img
+            src={petshop}
+            alt=""
+            className="mr-20 cursor-pointer overflow-hidden transition-transform transform hover:scale-120"
+            onClick={() => handleCardClick("/")}
+          />
         </div>
       </div>
     </>
