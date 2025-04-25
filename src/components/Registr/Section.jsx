@@ -13,8 +13,8 @@ const Section = () => {
     <>
       <Header />
       <main className="flex mt-25 fixed w-full h-full">
-        <div className="w-[200px]  h-[660px] ps-[20px] bg-black text-white flex flex-col justify-between rounded-br-[50px] z-20 ">
-          <div className="h-[300px] flex flex-col justify-evenly mt-[-25px]">
+        <div className="w-[200px]  h-[660px] ps-[20px] bg-black text-white flex flex-col justify-between rounded-br-[100px] z-20 ">
+          <div className="h-[300px] flex flex-col justify-evenly mt-15">
             <div className="flex items-center">
               <img className="" src={user1} alt="userr" />
               <p className="">Profile</p>
@@ -39,8 +39,9 @@ const Section = () => {
             </div>
           </div>
         </div>
+        <div className="absolute mt-110 ml-0 bg-amber-50 z-10 w-50 h-50"></div>
         <div className="w-full h-[660px] bg-black z-10">
-          <div className="rounded-tl-[120px] w-full h-full bg-amber-50 p-[100px] ml-[-20px]">
+          <div className="rounded-tl-[120px] w-full h-full bg-amber-50 p-[100px]">
             <div className="w-[70%] flex justify-between items-end ml-50 mt-10">
               <div className="">
                 <div className="flex flex-col justify-between h-[370px]">
@@ -91,7 +92,7 @@ const Section = () => {
               </div>
               <div>
                 <button className="bg-black text-white font-bold py-3 px-6 rounded-full text-base flex items-center gap-2 hover:bg-gray-800 transition">
-                  Logout
+                  LogOut
                   <span className="w-5 h-5">&#10132;</span>
                 </button>
               </div>
