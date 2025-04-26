@@ -2,7 +2,7 @@ import React from "react";
 
 const AnimalsCard = ({ image, name, age, gender, breed }) => {
   return (
-    <div className="flex max-w-2xl rounded-2xl shadow-lg overflow-hidden bg-white">
+    <div className="flex w-2xl rounded-2xl shadow-lg overflow-hidden bg-white">
       <img src={image} alt={name} className="w-1/3 object-cover h-64" />
       <div className="w-2/3 p-6 flex flex-col justify-between">
         <div>

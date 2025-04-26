@@ -3,7 +3,12 @@ import { useNavigate } from "react-router-dom";
 import Photo from "../assets/img/Intro.jpg";
 import fotodog from "../assets/img/fotodog.png";
 
-const Main = () => {
+function Main() {
+  const navigate = useNavigate();
+
+  const handleCardClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
       <main className="w-full ">
@@ -17,7 +22,10 @@ const Main = () => {
                   Получить скидку{" "}
                 </p>
               </div>
-              <button className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800 cursor-pointer">
+              <button
+                className="text-3xl font-bold mt-10 text-white bg-black rounded-3xl h-15 w-50 transition-transform transform hover:scale-105 hover:bg-gray-800 cursor-pointer"
+                onClick={() => handleCardClick("/join")}
+              >
                 Join
               </button>
             </div>
@@ -73,6 +81,6 @@ const Main = () => {
       </main>
     </>
   );
-};
+}
 
 export default Main;

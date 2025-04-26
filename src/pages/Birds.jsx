@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
-import AnimalsCard from "./helpers/AnimalsCard";
+import AnimalsCard from "../helpers/AnimalsCard";
 
 const Birds = () => {
   return (
     <>
       <Header />
-      <div className="mt-10 w-[80%] ml-[10%] flex flex-wrap justify-around gap-y-10">
+
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
         <AnimalsCard
           image={""}
           name="Аурио"
@@ -21,6 +22,8 @@ const Birds = () => {
           age="2 года"
           breed="Синица лазоревка"
         />
+      </div>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
         <AnimalsCard
           image={""}
           name="Зико"
@@ -35,6 +38,9 @@ const Birds = () => {
           age="1.5 года"
           breed="Корелла"
         />
+      </div>
+
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
         <AnimalsCard
           image={""}
           name="Рио"
