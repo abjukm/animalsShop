@@ -1,16 +1,40 @@
-import React from 'react'
-import logo from '../assets/introImg/logo.png'
+import React from "react";
+import logo from "../assets/introImg/logo.png";
+import { useNavigate } from "react-router-dom";
+import petshop from "../assets/footicon/petshop.svg";
 
-const Header = () => {
+function Header() {
+  const navigate = useNavigate();
+
+  const handleCardClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
-      <div className='bg-black h-20 w-full flex justify-around items-center fixed top-0 left-0 z-20'>
-        <img className='rounded-[50%] ' src={logo} alt="" />
-        <p className='text-white'>Find everything that you need for your pet</p>
-        <p className='text-white'>PetShop</p>
+      <div className="bg-black w-full fixed top-0 left-0 z-20 h-25 flex items-center">
+        <div className="w-full flex justify-between items-center ml-[20px]">
+          <div className="flex items-center justify-between cursor-pointer">
+            <img
+              className="rounded-[50%] overflow-hidden transition-transform transform hover:scale-120"
+              src={logo}
+              alt=""
+              onClick={() => handleCardClick("/registr")}
+            />
+            <h1 className="text-white text-[30px] pl-5">ZooTopia</h1>
+          </div>
+          <p className="text-white ml-[-80px] text-[25px]">
+            Найдите все, что вам нужно для вашего питомца
+          </p>
+          <img
+            src={petshop}
+            alt=""
+            className="mr-20 cursor-pointer overflow-hidden transition-transform transform hover:scale-120"
+            onClick={() => handleCardClick("/")}
+          />
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

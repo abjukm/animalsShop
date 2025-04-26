@@ -28,10 +28,31 @@ const Cats = () => {
         <div className="w-5/12 bg-blue-300 rounded-3xl flex items-center justify-start"> 
         <img src={Cat4} alt="" className="w-5/10 rounded-4xl" />
         <p className="text-2xl font-bold ml-10 ">Смоки<br />2года <br />Теннессийский рекс</p></div>
+
+        <Header />
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+        <AnimalsCard
+          image={cat}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+        <AnimalsCard
+          image={dog}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+      </div>
       </div>
      </main>
+
+
+
     </>
   );
-};
+}
 
 export default Cats;
