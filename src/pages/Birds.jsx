@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import AnimalsCard from "./helpers/AnimalsCard";
+import AnimalsCard from "../helpers/AnimalsCard";
 
 const Birds = () => {
   return (
