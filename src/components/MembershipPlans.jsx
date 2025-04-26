@@ -70,6 +70,22 @@ const MembershipPlans = () => {
           ))}
         </div>
       </div>
+      <div className="w-[251px] h-[376px] rounded-2xl border border-black flex flex-col  justify-center">
+        <div className="h-[63px]">
+          <h1 className="ml-6 mt-5">Basic Membership (Free)</h1>
+        </div>
+        <hr />
+        <ul
+          className="flex flex-col items-center justify-around h-[261px] w-[60%] ml-[10%] list-disc
+"
+        >
+          <li>Welcome package with coupons or samples</li>
+          <li>Access to member-only sales and promotions</li>
+          <li>Monthly newsletter with pet care tips and exclusive offers</li>
+        </ul>
+        <hr />
+        <div className="h-[63px]"></div>
+      </div>
     </div>
   );
 };
