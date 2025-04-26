@@ -69,6 +69,38 @@ const Cats = () => {
 
 
 
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+        <AnimalsCard
+          image={cat}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+        <AnimalsCard
+          image={dog}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+      </div>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+        <AnimalsCard
+          image={cat}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+        <AnimalsCard
+          image={dog}
+          name="Мурзик"
+          gender="Мужской"
+          age="2 года"
+          breed="Шотландская вислоухая"
+        />
+      </div>
     </>
   );
 }

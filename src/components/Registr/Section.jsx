@@ -91,7 +91,7 @@ const Section = () => {
                 </div>
               </div>
               <div>
-                <button className="bg-black text-white font-bold py-3 px-6 rounded-full text-base flex items-center gap-2 hover:bg-gray-800 transition">
+                <button className="bg-black text-white font-bold py-3 px-6 rounded-full text-base flex items-center gap-2 hover:bg-gray-800 transition cursor-pointer">
                   LogOut
                   <span className="w-5 h-5">&#10132;</span>
                 </button>
