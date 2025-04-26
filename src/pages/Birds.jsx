@@ -17,6 +17,10 @@ const Birds = () => {
       <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
       <AnimalsCard
           image={canary}
+/>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+        <AnimalsCard
+          image={""}
           name="Аурио"
           gender="Мужской"
           age="1 год"
@@ -32,7 +36,9 @@ const Birds = () => {
       </div>
       <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
       <AnimalsCard
-          image={parrot}
+          image={parrot}/>
+        <AnimalsCard
+          image={""}
           name="Зико"
           gender="Мужской"
           age="3 года"
@@ -49,6 +55,10 @@ const Birds = () => {
       <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
       <AnimalsCard
           image={ara}
+/>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+        <AnimalsCard
+          image={""}
           name="Рио"
           gender="Мужской"
           age="2.5 года"

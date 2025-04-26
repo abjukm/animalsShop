@@ -5,8 +5,8 @@ import Birds from "../pages/Birds";
 import Fishes from "../pages/Fishes";
 import Intro from "../components/Intro";
 import Section from "../components/Registr/Section";
-
 import React from "react";
+import MembershipPlans from "../components/MembershipPlans";
 
 export const Navigation = () => {
   return (
@@ -19,9 +19,9 @@ export const Navigation = () => {
           <Route path="/birds" element={<Birds />} />
           <Route path="/fishes" element={<Fishes />} />
           <Route path="/registr" element={<Section />} />
+          <Route path="/join" element={<MembershipPlans />} />
         </Routes>
       </Router>
-      ;
     </>
   );
 };

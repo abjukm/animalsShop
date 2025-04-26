@@ -13,9 +13,9 @@ function Header() {
     <>
       <div className="bg-black w-full fixed top-0 left-0 z-20 h-25 flex items-center">
         <div className="w-full flex justify-between items-center ml-[20px]">
-          <div className="flex items-center justify-between cursor-pointer">
+          <div className="flex items-center justify-between">
             <img
-              className="rounded-[50%] overflow-hidden transition-transform transform hover:scale-120"
+              className="rounded-[50%] overflow-hidden transition-transform transform hover:scale-120 cursor-pointer"
               src={logo}
               alt=""
               onClick={() => handleCardClick("/registr")}
