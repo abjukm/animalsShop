@@ -13,11 +13,12 @@ import amadine from "../assets/birdsimg/amadine.jpg";
 const Birds = () => {
   return (
     <>
-      <Header />
+     <div className="">
+     <Header />
       <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
       <AnimalsCard
           image={canary}
-/>
+/></div>
       <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
         <AnimalsCard
           image={""}
@@ -72,6 +73,8 @@ const Birds = () => {
           breed="Амадина"
         />
       </div>
+     </div>
+     </div>;
     </>
   );
 };
