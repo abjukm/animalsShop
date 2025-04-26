@@ -1,20 +1,17 @@
 import React from "react";
-import Cat1 from "../../src/assets/cat1.jpg"
-import Cat2 from "../../src/assets/cat2.jpg"
-import Cat3 from "../../src/assets/photo3.jpg"
-import Cat4 from "../../src/assets/cat5.webp"
-import Cat5 from "../../src/assets/cat7.jpg"
-import Cat6 from "../../src/assets/cat6.webp"
+import Cat1 from "../../src/assets/cat1.jpg";
+import Cat2 from "../../src/assets/cat2.jpg";
+import Cat3 from "../../src/assets/photo3.jpg";
+import Cat4 from "../../src/assets/cat5.webp";
+import Cat5 from "../../src/assets/cat7.jpg";
+import Cat6 from "../../src/assets/cat6.webp";
 import Header from "../components/Header";
 import AnimalsCard from "../helpers/AnimalsCard";
 
 const Cats = () => {
-
   return (
     <>
-    <Header/>
-      
-       
+      <Header />
 
       <div className="mt-35 w-[80%] ml-[10%] flex justify-between">
         <AnimalsCard
@@ -64,45 +61,8 @@ const Cats = () => {
           breed="Таласская"
         />
       </div>
-      
-     
-
-
-
-      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
-        <AnimalsCard
-          image={cat}
-          name="Мурзик"
-          gender="Мужской"
-          age="2 года"
-          breed="Шотландская вислоухая"
-        />
-        <AnimalsCard
-          image={dog}
-          name="Мурзик"
-          gender="Мужской"
-          age="2 года"
-          breed="Шотландская вислоухая"
-        />
-      </div>
-      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
-        <AnimalsCard
-          image={cat}
-          name="Мурзик"
-          gender="Мужской"
-          age="2 года"
-          breed="Шотландская вислоухая"
-        />
-        <AnimalsCard
-          image={dog}
-          name="Мурзик"
-          gender="Мужской"
-          age="2 года"
-          breed="Шотландская вислоухая"
-        />
-      </div>
     </>
   );
-}
+};
 
 export default Cats;
