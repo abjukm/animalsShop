@@ -1,49 +1,61 @@
 import React from "react";
 import Header from "../components/Header";
-import AnimalsCard from "./helpers/AnimalsCard";
+import AnimalsCard from "../helpers/AnimalsCard";
+import canary from "../assets/birdsimg/canary.webp";
+import sinitca from "../assets/birdsimg/sinitca.jpg";
+import parrot from "../assets/birdsimg/parrot.jpg";
+import corella from "../assets/birdsimg/corella.jpg";
+import ara from "../assets/birdsimg/ara.jpg";
+import amadine from "../assets/birdsimg/amadine.jpg";
+
+
 
 const Birds = () => {
   return (
     <>
       <Header />
-      <div className="mt-10 w-[80%] ml-[10%] flex flex-wrap justify-around gap-y-10">
-        <AnimalsCard
-          image={""}
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+      <AnimalsCard
+          image={canary}
           name="Аурио"
           gender="Мужской"
           age="1 год"
           breed="Канарейка"
         />
         <AnimalsCard
-          image={""}
+          image={sinitca}
           name="Лазу"
           gender="Женский"
           age="2 года"
           breed="Синица лазоревка"
         />
-        <AnimalsCard
-          image={""}
+      </div>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+      <AnimalsCard
+          image={parrot}
           name="Зико"
           gender="Мужской"
           age="3 года"
           breed="Попугай"
         />
         <AnimalsCard
-          image={""}
+          image={corella}
           name="Альма"
           gender="Женский"
           age="1.5 года"
           breed="Корелла"
         />
-        <AnimalsCard
-          image={""}
+      </div>
+      <div className="mt-35 w-[80%] ml-[10%] flex justify-around">
+      <AnimalsCard
+          image={ara}
           name="Рио"
           gender="Мужской"
           age="2.5 года"
           breed="Ара"
         />
         <AnimalsCard
-          image={""}
+          image={amadine}
           name="Сави"
           gender="Женский"
           age="1 год"
